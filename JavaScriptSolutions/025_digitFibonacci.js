@@ -5,10 +5,9 @@ const digitFibonacci = n => {
     while(true) {
         i++;
         let val = val1 + val2;
-        if (val.toString().length >= n) break;
+        if (val.toString().length >= n) return i;
         val1 = val2;
         val2 = val
     }
-    return i;
 }
  
